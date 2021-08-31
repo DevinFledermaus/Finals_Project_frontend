@@ -33,7 +33,23 @@
             <!-- <a href="./login.html"><button>Profile</button></a> -->
         </div>
     </div>
-    <form class="form" id="loginform" action="POST">
+    <form action="POST">
+      <input
+        type="text"
+        id="first-name"
+        name="first_name"
+        class="inputs"
+        placeholder="First Name"
+        required
+      />
+      <input
+        type="text"
+        id="last-name"
+        name="last_name"
+        class="inputs"
+        placeholder="Last Name"
+        required
+      />
         <input
         type="text"
         id="username"
@@ -42,20 +58,26 @@
         class="inputs"
         required
       />
-
       <input
-        type="password"
+        type="text"
         id="password"
         name="Password"
         placeholder="Password"
         class="inputs"
         required
       />
+      <input
+        type="email"
+        id="email"
+        name="email"
+        class="inputs"
+        placeholder="Email Address"
+        required
+      />
       <button type="submit" class="buttons">Login</button>
       <div class="account">
-        <a href="./register.html">New User?</a>
+        <a href="./login.html">Already Registered?</a>
       </div>
     </form>
-    <script src="./javascript/login.js"></script>
 </body>
 </html>

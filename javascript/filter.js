@@ -1,6 +1,4 @@
-// Fetching products from database and then displaying them
-
-function createCards() {
+function filterCards() {
     let container = document.querySelector(".cards");
 
     fetch("https://safe-stream-00881.herokuapp.com/view-all/").then(
@@ -9,6 +7,10 @@ function createCards() {
               console.log(obj);
               data = obj.data;
               console.log(data);
+              let filtered = data.filter(function (e){
+                  return e.data[3] == 300;
+              });
+              console.log(filtered);
               container.innerHTML = ``;
               let index = 0;
               data.forEach((comic) => {
@@ -18,7 +20,6 @@ function createCards() {
                <button onclick="addToCart(${comic[0]})" class="AtCbtn-${comic[0]}">Add to cart</button>
                <button onclick="editComic(${comic[0]})" class="editbtn-${comic[0]}">Edit Comic Details</button>
                <button onclick="dltComic(${comic[0]})" class="dltbtn-${comic[0]}">Delete Comic</button>
-
            </div>`;
                 console.log(index);
                 index++;
@@ -28,6 +29,4 @@ function createCards() {
     );
 }
 
-createCards();
-
-
+filterCards();

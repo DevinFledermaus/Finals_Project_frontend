@@ -35,12 +35,35 @@
     </div>
     <div class="heading">
         <h1>All Comics</h1>
-        <button onclick="filterCards()">Filter</button>
+        <div class="filters">
+            <div class="container1">
+                <button onclick="">Filter by Universe</button>
+                <div>
+                    <button onclick="dcCards()">DC</button>
+                    <button onclick="marvelCards()">Marvel</button>
+                    <button onclick="vertigoCards()">Vertigo</button>
+                </div>
+            </div>
+            <div class="container2">
+                <button onclick="">Filter by Era</button>
+                <div>
+                    <button onclick="modCards()">Modern Age</button>
+                    <button onclick="brnCards()">Bronze Age</button>
+                </div>
+            </div>
+            <div class="container3">
+                <button onclick="">Sort by Price</button>
+                <div>
+                    <button onclick="ascCards()">Ascending</button>
+                    <button onclick="desCards()">Descending</button>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="container">
         <div class="cards"></div>
       </div>
-      <script src="./javascript/comics.js"></script>
       <script src="./javascript/filter.js"></script>
+      <script src="./javascript/comics.js"></script>
 </body>
 </html>

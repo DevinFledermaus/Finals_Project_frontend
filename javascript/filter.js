@@ -177,9 +177,9 @@ function ascCards() {
             //   console.log(obj);
               data = obj.data;
             //   console.log(data);
-              let filtered = data.sort(e => {
-                return e[3];
-              })
+            let filtered = data.sort((a, b) => {
+              return a[3] - b[3];
+            })
               console.log(filtered);
               container.innerHTML = ``;
               let index = 0;

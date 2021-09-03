@@ -29,8 +29,9 @@
             </button>
         </nav>
         <div class="buttons">
-            <button>Cart</button>
+            <button class="" onclick="viewCart()">Cart</button>
             <a href="./login.html"><button>Profile</button></a>
+            <button onclick="Logout()">Logout</button>
         </div>
     </div>
     <div class="heading">
@@ -58,12 +59,19 @@
                     <button onclick="desCards()">Descending</button>
                 </div>
             </div>
+            <div class="reset">
+                <button onclick="resetCards()">Reset Filters</button>
+            </div>
         </div>
     </div>
     <div class="container">
         <div class="cards"></div>
       </div>
+      <div class="cart"></div>
+      <button>View</button>
       <script src="./javascript/filter.js"></script>
+      <script src="./javascript/cart.js"></script>
+      <script src="./javascript/login.js"></script>
       <script src="./javascript/comics.js"></script>
 </body>
 </html>

@@ -22,7 +22,8 @@ function login(username, password) {
           myStorage.setItem("username", username);
           myStorage.setItem("password", password);
           alert("Successfully Logged In")
-          window.location.href = "./index.html";
+          window.location.href = "./comics.html";
+          console.log(window.localStorage.getItem("username"))
         }
       });
   }
@@ -33,3 +34,15 @@ function login(username, password) {
     e.preventDefault();
     login(username, password);
   });
+
+
+  function Logout() {
+    if (window.localStorage.getItem("username")) {
+      let confirmation = confirm("Are you sure that you want to log out?");
+      if (confirmation) {
+        window.localStorage.removeItem("username")
+        alert("Logged out successfully")
+        console.log(window.localStorage.getItem("username"))
+      }
+    }
+  }

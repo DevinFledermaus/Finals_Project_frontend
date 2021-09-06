@@ -1,0 +1,48 @@
+.navbar-links {
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
+    /* background: blue; */
+    background-image: url(../images/header2.jpg);
+    background-size: contain;
+    position: fixed;
+    width: 20vw;
+    height: 100vh;
+    justify-content: center;
+    top: 0;
+    left: -100%;
+    gap: 30px;
+    transition: all 0.3s linear;
+    z-index: 100;
+}
+
+.navbar-links.active {
+    left: 0;
+}
+
+.navbar-anchor {
+    display: flex;
+    right: 0;
+    text-decoration-line: none;
+    color: white;
+    justify-content: center;
+    padding: 1%;
+}
+
+.navbar-button {
+    position: fixed;
+    top: 3;
+    left: 3;
+    z-index: 100;
+    background: none;
+    border: none;
+    transition: 0.5s ease-in-out;
+}
+
+.navbar-button:hover {
+    border: none;
+    top: 3;
+    left: 3;
+    transform: rotate(180deg);
+    cursor: pointer;
+}

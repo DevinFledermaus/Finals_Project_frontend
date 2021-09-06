@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/navbar.css">
     <link rel="stylesheet" href="./styles/about.css">
     <title>Koumori's Comics About Page</title>
     <script
@@ -12,26 +14,27 @@
     ></script>
 </head>
 <body>
-    <div class="header">Koumori's Comics
-        <nav>
+    <div class="header">
+        <h1>Koumori's Comics</h1>
+        <nav class="navbar">
             <ul class="navbar-links">
                 <li class="navbar-link">
-                    <a href="./index.html">Home</a>
+                    <a href="./index.html" class="navbar-anchor">Home</a>
                 </li>
                 <li class="navbar-link">
-                    <a href="./comics.html">Comics</a>
+                    <a href="./comics.html" class="navbar-anchor">Comics</a>
                 </li>
                 <li class="navbar-link">
-                    <a href="./about.html">About</a>
+                    <a href="./about.html" class="navbar-anchor">About</a>
                 </li>
             </ul>
-            <button onclick="navbar()">
+            <button class="navbar-button" onclick="navbar()">
                 <i class="fas fa-bars"></i>
             </button>
         </nav>
         <div class="buttons">
-            <button>Cart</button>
-            <a href="./login.html"><button>Profile</button></a>
+            <button class="cart-button" onclick="viewCart()"><img src="https://img.icons8.com/ios-glyphs/30/000000/fast-cart.png"/></button>
+            <a href="./login.html"><button><img src="https://img.icons8.com/color/30/000000/batman.png"/></button></a>
         </div>
     </div>
     <div class="about">
@@ -45,5 +48,6 @@
         <h4>Trading Hours: 09h00 - 18h00</h4>
         <h4>Location: WatchTower <br></br><span>(Not really)</span></h4>
     </div>
+    <script src="./javascript/navbar.js"></script>
 </body>
 </html>

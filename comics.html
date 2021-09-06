@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/comics.css">
+    <link rel="stylesheet" href="./styles/cart.css">
     <title>Koumori's Comics All Comics Page</title>
     <script
       src="https://kit.fontawesome.com/cce18f0ce0.js"
@@ -11,27 +15,28 @@
     ></script>
 </head>
 <body>
-    <div class="header">Koumori's Comics
-        <nav>
+    <div class="header">
+        <h1>Koumori's Comics</h1>
+        <nav class="navbar">
             <ul class="navbar-links">
                 <li class="navbar-link">
-                    <a href="./index.html">Home</a>
+                    <a href="./index.html" class="navbar-anchor">Home</a>
                 </li>
                 <li class="navbar-link">
-                    <a href="./comics.html">Comics</a>
+                    <a href="./comics.html" class="navbar-anchor">Comics</a>
                 </li>
                 <li class="navbar-link">
-                    <a href="./about.html">About</a>
+                    <a href="./about.html" class="navbar-anchor">About</a>
                 </li>
             </ul>
-            <button onclick="navbar()">
+            <button class="navbar-button" onclick="navbar()">
                 <i class="fas fa-bars"></i>
             </button>
         </nav>
         <div class="buttons">
-            <button class="" onclick="viewCart()">Cart</button>
-            <a href="./login.html"><button>Profile</button></a>
-            <button onclick="Logout()">Logout</button>
+            <button class="cart-button" onclick="viewCart()"><img src="https://img.icons8.com/ios-glyphs/30/000000/fast-cart.png"/></button>
+            <a href="./login.html"><button><img src="https://img.icons8.com/color/30/000000/batman.png"/></button></a>
+            <button onclick="Logout()"><img src="https://img.icons8.com/ios-filled/30/000000/logout-rounded.png"/></button>
         </div>
     </div>
     <div class="heading">
@@ -64,11 +69,14 @@
             </div>
         </div>
     </div>
-    <div class="container">
+    <div class="cards-container">
         <div class="cards"></div>
       </div>
-      <div class="cart"></div>
+      <div class="cart-container">
+          <div class="cart"></div>
+      </div>
       <button>View</button>
+      <script src="./javascript/navbar.js"></script>
       <script src="./javascript/filter.js"></script>
       <script src="./javascript/cart.js"></script>
       <script src="./javascript/login.js"></script>

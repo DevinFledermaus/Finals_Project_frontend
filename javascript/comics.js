@@ -19,13 +19,15 @@ function viewCart(){
 
 function editComic(){   
     console.log("he", window.localStorage.getItem("username"))
-    // if (window.localStorage.getItem("username") === null){
-    //     let edit_btn = document.querySelectorall(`.btn`)
-    //     edit_btn.forEach((btn) => {
-    //         btn.style.display = "none";
-    //     })
-    //     edit_btn.style.display = "none";
-    // };
+    if (window.localStorage.getItem("username") === null){
+        let edit_btn = document.querySelectorall(`.btn`)
+        edit_btn.forEach((btn) => {
+            btn.style.display = "none";
+        })
+        // edit_btn.style.display = "none";
+    };
+    
+
 }
 editComic();
 
@@ -53,15 +55,14 @@ function createCards() {
                <h4>R ${comic[3]}.00</h4>
                </div>
                <button onclick="addToCart(${comic[0]})" class="AtCbtn-${comic[0]}">Add to cart</button>
-           </div>`
-                container.innerHTML += `<div>
-                <button onclick="editComic(${comic[0]})" class="editbtn btn-${comic[0]}">Edit Comic Details</button>
-                <button onclick="dltComic(${comic[0]})" class="dltbtn btn-${comic[0]}">Delete Comic</button>
-            </div>`;
+               <button onclick="editComic(${comic[0]})" class="editbtn btn-${comic[0]}">Edit Comic Details</button>
+               <button onclick="dltComic(${comic[0]})" class="dltbtn btn-${comic[0]}">Delete Comic</button>
+           </div>`;
                 console.log(index);
                 index++;
                 });
             });
+            editComic();
         }
     );
 }

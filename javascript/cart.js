@@ -9,7 +9,7 @@ function populateCart() {
           //   let total = 0;
           cart_container.innerHTML = ``;
           cart.forEach((order) => {
-            console.log("waah", order);
+            // console.log(order);
             data.forEach((comic) => {
               if (comic[0] == order) {
                 // console.log(product);

@@ -1,0 +1,17 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.cart-container {
+    background: blueviolet;
+    width: 100vw;
+    height: 50vh;
+}
+
+.cart {
+    background: tomato;
+    width: 80vw;
+    height: 30vh;
+}

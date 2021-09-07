@@ -15,11 +15,18 @@ function dcCards() {
               let index = 0;
               filtered.forEach((comic) => {
                 container.innerHTML += `<div class="card">
-               <h2> ${comic[1]}</h2>
-               <h4>R ${comic[3]}.00</h4>
-               <button onclick="addToCart(${comic[0]})" class="AtCbtn-${comic[0]}">Add to cart</button>
-               <button onclick="editComic(${comic[0]})" class="editbtn-${comic[0]}">Edit Comic Details</button>
-               <button onclick="dltComic(${comic[0]})" class="dltbtn-${comic[0]}">Delete Comic</button>
+                <div class="title">
+                    <h2> ${comic[1]}</h2>
+                </div>
+                <div class="rest">
+                    <h4>R ${comic[3]}.00</h4>
+                    <div class="buttons">
+                        <button onclick="viewComic(${comic[0]})" class="viewbtn-${comic[0]}">View</button>
+                        <button onclick="addToCart(${comic[0]})" class="AtCbtn-${comic[0]}">Add to cart</button>
+                        <button onclick="editComic(${comic[0]})" class="editbtn btn-${comic[0]}">Edit Comic Details</button>
+                        <button onclick="dltComic(${comic[0]})" class="dltbtn btn-${comic[0]}">Delete Comic</button>
+                    </div>
+                </div>
            </div>`;
                 // console.log(index);
                 index++;
@@ -49,11 +56,18 @@ function marvelCards() {
               let index = 0;
               filtered.forEach((comic) => {
                 container.innerHTML += `<div class="card">
-               <h2> ${comic[1]}</h2>
-               <h4>R ${comic[3]}.00</h4>
-               <button onclick="addToCart(${comic[0]})" class="AtCbtn-${comic[0]}">Add to cart</button>
-               <button onclick="editComic(${comic[0]})" class="editbtn-${comic[0]}">Edit Comic Details</button>
-               <button onclick="dltComic(${comic[0]})" class="dltbtn-${comic[0]}">Delete Comic</button>
+                <div class="title">
+                    <h2> ${comic[1]}</h2>
+                </div>
+                <div class="rest">
+                    <h4>R ${comic[3]}.00</h4>
+                    <div class="buttons">
+                        <button onclick="viewComic(${comic[0]})" class="viewbtn-${comic[0]}">View</button>
+                        <button onclick="addToCart(${comic[0]})" class="AtCbtn-${comic[0]}">Add to cart</button>
+                        <button onclick="editComic(${comic[0]})" class="editbtn btn-${comic[0]}">Edit Comic Details</button>
+                        <button onclick="dltComic(${comic[0]})" class="dltbtn btn-${comic[0]}">Delete Comic</button>
+                    </div>
+                </div>
            </div>`;
                 // console.log(index);
                 index++;
@@ -83,11 +97,18 @@ function vertigoCards() {
               let index = 0;
               filtered.forEach((comic) => {
                 container.innerHTML += `<div class="card">
-               <h2> ${comic[1]}</h2>
-               <h4>R ${comic[3]}.00</h4>
-               <button onclick="addToCart(${comic[0]})" class="AtCbtn-${comic[0]}">Add to cart</button>
-               <button onclick="editComic(${comic[0]})" class="editbtn-${comic[0]}">Edit Comic Details</button>
-               <button onclick="dltComic(${comic[0]})" class="dltbtn-${comic[0]}">Delete Comic</button>
+                <div class="title">
+                    <h2> ${comic[1]}</h2>
+                </div>
+                <div class="rest">
+                    <h4>R ${comic[3]}.00</h4>
+                    <div class="buttons">
+                        <button onclick="viewComic(${comic[0]})" class="viewbtn-${comic[0]}">View</button>
+                        <button onclick="addToCart(${comic[0]})" class="AtCbtn-${comic[0]}">Add to cart</button>
+                        <button onclick="editComic(${comic[0]})" class="editbtn btn-${comic[0]}">Edit Comic Details</button>
+                        <button onclick="dltComic(${comic[0]})" class="dltbtn btn-${comic[0]}">Delete Comic</button>
+                    </div>
+                </div>
            </div>`;
                 // console.log(index);
                 index++;
@@ -117,11 +138,18 @@ function modCards() {
               let index = 0;
               filtered.forEach((comic) => {
                 container.innerHTML += `<div class="card">
-               <h2> ${comic[1]}</h2>
-               <h4>R ${comic[3]}.00</h4>
-               <button onclick="addToCart(${comic[0]})" class="AtCbtn-${comic[0]}">Add to cart</button>
-               <button onclick="editComic(${comic[0]})" class="editbtn-${comic[0]}">Edit Comic Details</button>
-               <button onclick="dltComic(${comic[0]})" class="dltbtn-${comic[0]}">Delete Comic</button>
+                <div class="title">
+                    <h2> ${comic[1]}</h2>
+                </div>
+                <div class="rest">
+                    <h4>R ${comic[3]}.00</h4>
+                    <div class="buttons">
+                        <button onclick="viewComic(${comic[0]})" class="viewbtn-${comic[0]}">View</button>
+                        <button onclick="addToCart(${comic[0]})" class="AtCbtn-${comic[0]}">Add to cart</button>
+                        <button onclick="editComic(${comic[0]})" class="editbtn btn-${comic[0]}">Edit Comic Details</button>
+                        <button onclick="dltComic(${comic[0]})" class="dltbtn btn-${comic[0]}">Delete Comic</button>
+                    </div>
+                </div>
            </div>`;
                 // console.log(index);
                 index++;
@@ -151,11 +179,18 @@ function brnCards() {
               let index = 0;
               filtered.forEach((comic) => {
                 container.innerHTML += `<div class="card">
-               <h2> ${comic[1]}</h2>
-               <h4>R ${comic[3]}.00</h4>
-               <button onclick="addToCart(${comic[0]})" class="AtCbtn-${comic[0]}">Add to cart</button>
-               <button onclick="editComic(${comic[0]})" class="editbtn-${comic[0]}">Edit Comic Details</button>
-               <button onclick="dltComic(${comic[0]})" class="dltbtn-${comic[0]}">Delete Comic</button>
+                <div class="title">
+                    <h2> ${comic[1]}</h2>
+                </div>
+                <div class="rest">
+                    <h4>R ${comic[3]}.00</h4>
+                    <div class="buttons">
+                        <button onclick="viewComic(${comic[0]})" class="viewbtn-${comic[0]}">View</button>
+                        <button onclick="addToCart(${comic[0]})" class="AtCbtn-${comic[0]}">Add to cart</button>
+                        <button onclick="editComic(${comic[0]})" class="editbtn btn-${comic[0]}">Edit Comic Details</button>
+                        <button onclick="dltComic(${comic[0]})" class="dltbtn btn-${comic[0]}">Delete Comic</button>
+                    </div>
+                </div>
            </div>`;
                 // console.log(index);
                 index++;
@@ -185,11 +220,18 @@ function ascCards() {
               let index = 0;
               filtered.forEach((comic) => {
                 container.innerHTML += `<div class="card">
-               <h2> ${comic[1]}</h2>
-               <h4>R ${comic[3]}.00</h4>
-               <button onclick="addToCart(${comic[0]})" class="AtCbtn-${comic[0]}">Add to cart</button>
-               <button onclick="editComic(${comic[0]})" class="editbtn-${comic[0]}">Edit Comic Details</button>
-               <button onclick="dltComic(${comic[0]})" class="dltbtn-${comic[0]}">Delete Comic</button>
+                <div class="title">
+                    <h2> ${comic[1]}</h2>
+                </div>
+                <div class="rest">
+                    <h4>R ${comic[3]}.00</h4>
+                    <div class="buttons">
+                        <button onclick="viewComic(${comic[0]})" class="viewbtn-${comic[0]}">View</button>
+                        <button onclick="addToCart(${comic[0]})" class="AtCbtn-${comic[0]}">Add to cart</button>
+                        <button onclick="editComic(${comic[0]})" class="editbtn btn-${comic[0]}">Edit Comic Details</button>
+                        <button onclick="dltComic(${comic[0]})" class="dltbtn btn-${comic[0]}">Delete Comic</button>
+                    </div>
+                </div>
            </div>`;
                 // console.log(index);
                 index++;
@@ -219,11 +261,18 @@ function desCards() {
               let index = 0;
               filtered.forEach((comic) => {
                 container.innerHTML += `<div class="card">
-               <h2> ${comic[1]}</h2>
-               <h4>R ${comic[3]}.00</h4>
-               <button onclick="addToCart(${comic[0]})" class="AtCbtn-${comic[0]}">Add to cart</button>
-               <button onclick="editComic(${comic[0]})" class="editbtn-${comic[0]}">Edit Comic Details</button>
-               <button onclick="dltComic(${comic[0]})" class="dltbtn-${comic[0]}">Delete Comic</button>
+                <div class="title">
+                    <h2> ${comic[1]}</h2>
+                </div>
+                <div class="rest">
+                    <h4>R ${comic[3]}.00</h4>
+                    <div class="buttons">
+                        <button onclick="viewComic(${comic[0]})" class="viewbtn-${comic[0]}">View</button>
+                        <button onclick="addToCart(${comic[0]})" class="AtCbtn-${comic[0]}">Add to cart</button>
+                        <button onclick="editComic(${comic[0]})" class="editbtn btn-${comic[0]}">Edit Comic Details</button>
+                        <button onclick="dltComic(${comic[0]})" class="dltbtn btn-${comic[0]}">Delete Comic</button>
+                    </div>
+                </div>
            </div>`;
                 // console.log(index);
                 index++;
@@ -248,22 +297,32 @@ function resetCards() {
             let index = 0;
             data.forEach((comic) => {
               container.innerHTML += `<div class="card">
-             <div class="card-info">
-             <h2> ${comic[1]}</h2>
-             <h4>R ${comic[3]}.00</h4>
-             </div>
-             <button onclick="addToCart(${comic[0]})" class="AtCbtn-${comic[0]}">Add to cart</button>
-             <button onclick="editComic(${comic[0]})" class="editbtn btn-${comic[0]}">Edit Comic Details</button>
-             <button onclick="dltComic(${comic[0]})" class="dltbtn btn-${comic[0]}">Delete Comic</button>
-
-         </div>`;
+                <div class="title">
+                    <h2> ${comic[1]}</h2>
+                </div>
+                <div class="rest">
+                    <h4>R ${comic[3]}.00</h4>
+                    <div class="buttons">
+                        <button onclick="viewComic(${comic[0]})" class="viewbtn-${comic[0]}">View</button>
+                        <button onclick="addToCart(${comic[0]})" class="AtCbtn-${comic[0]}">Add to cart</button>
+                        <button onclick="editComic(${comic[0]})" class="editbtn btn-${comic[0]}">Edit Comic Details</button>
+                        <button onclick="dltComic(${comic[0]})" class="dltbtn btn-${comic[0]}">Delete Comic</button>
+                    </div>
+                </div>
+           </div>`;
               console.log(index);
               index++;
               });
           });
-          editComic();
       }
   );
 }
 
 resetCards();
+
+function toggleFilter(index) {
+  // console.log(index);
+  document.querySelectorAll(`.hidden-${index}`).forEach((hidden) => {
+    hidden.classList.toggle("show")
+  })
+}

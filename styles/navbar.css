@@ -2,9 +2,7 @@
     display: flex;
     list-style-type: none;
     flex-direction: column;
-    /* background: blue; */
-    background-image: url(../images/header2.jpg);
-    background-size: contain;
+    background: black;
     position: fixed;
     width: 20vw;
     height: 100vh;
@@ -30,9 +28,13 @@
 }
 
 .navbar-button {
+    display: flex;
+    justify-content: flex-start;
     position: fixed;
-    top: 3;
-    left: 3;
+    top: 3%;
+    left: 2%;
+    font-size: 180%;
+    color: white;
     z-index: 100;
     background: none;
     border: none;

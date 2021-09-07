@@ -18,10 +18,7 @@ function populateCart() {
               <p class="id">Title: ${comic[1]}</p>
               <p class="name">Description: ${comic[2]}</p>
               <p class="price">Price: R${comic[3]}.00</p>
-              <div class="quantity-div">
-                <label for="quantity">Quantity: </label>
-                <input type="number" class="quantity-input" name="quantity" min="1" max="100" value="1">
-              </div>
+              <p class="quantity">Quantity: 1</p>
               <button>Remove</button>
             </div>`;
               }

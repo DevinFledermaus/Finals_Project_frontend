@@ -3,7 +3,7 @@ if (reg_form != null) {
     reg_form.addEventListener("submit", (e) => {
       //  PREVENT THE DEFAULT ACTION OF THE FORM
       e.preventDefault();
-  
+
       //  CREATE AN OBJECT CONTAINING ALL THE INPUTS VALUES
       let new_user = {
         fisrt_name: document.querySelector("#first-name").value,

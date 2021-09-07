@@ -39,43 +39,47 @@
             <button onclick="Logout()"><img src="https://img.icons8.com/ios-filled/30/000000/logout-rounded.png"/></button>
         </div>
     </div>
-    <div class="heading">
-        <h1>All Comics</h1>
-        <div class="filters">
-            <div class="container1">
-                <button onclick="">Filter by Universe</button>
-                <div>
-                    <button onclick="dcCards()">DC</button>
-                    <button onclick="marvelCards()">Marvel</button>
-                    <button onclick="vertigoCards()">Vertigo</button>
+    <div class="content">
+        <div class="heading">
+            <h1>All Comics</h1>
+            <div class="filters">
+                <div class="container1">
+                    <div>
+                        <button id="filter-groups" class="filter-1" onclick="toggleFilter(1)">Filter by Universe</button>
+                        <button class="hidden-1" onclick="dcCards()">DC</button>
+                        <button class="hidden-1" onclick="marvelCards()">Marvel</button>
+                        <button class="hidden-1" onclick="vertigoCards()">Vertigo</button>
+                    </div>
                 </div>
-            </div>
-            <div class="container2">
-                <button onclick="">Filter by Era</button>
-                <div>
-                    <button onclick="modCards()">Modern Age</button>
-                    <button onclick="brnCards()">Bronze Age</button>
+                <div class="container2">
+                    <div>
+                        <button id="filter-groups" class="filter-2" onclick="toggleFilter(2)">Filter by Era</button>
+                        <button class="hidden-2" onclick="modCards()">Modern Age</button>
+                        <button class="hidden-2" onclick="brnCards()">Bronze Age</button>
+                    </div>
                 </div>
-            </div>
-            <div class="container3">
-                <button onclick="">Sort by Price</button>
-                <div>
-                    <button onclick="ascCards()">Ascending</button>
-                    <button onclick="desCards()">Descending</button>
+                <div class="container3">
+                    <div>
+                        <button id="filter-groups" class="filter-3" onclick="toggleFilter(3)">Sort by Price</button>
+                        <button class="hidden-3" onclick="ascCards()">Ascending</button>
+                        <button class="hidden-3" onclick="desCards()">Descending</button>
+                    </div>
                 </div>
-            </div>
-            <div class="reset">
-                <button onclick="resetCards()">Reset Filters</button>
+                <div class="reset">
+                    <button id="filter-groups" onclick="resetCards()">Reset Filters</button>
+                </div>
             </div>
         </div>
+        <div class="cards-container">
+            <div class="cards"></div>
+            <div id="modal" class="comic-details"></div>
+          </div>
+          <div class="cart-container">
+              <div class="cart"></div>
+          </div>
+          <button>View</button>
     </div>
-    <div class="cards-container">
-        <div class="cards"></div>
-      </div>
-      <div class="cart-container">
-          <div class="cart"></div>
-      </div>
-      <button>View</button>
+      <script src="./javascript/modal.js"></script>
       <script src="./javascript/navbar.js"></script>
       <script src="./javascript/filter.js"></script>
       <script src="./javascript/cart.js"></script>

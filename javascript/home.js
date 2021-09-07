@@ -1,3 +1,22 @@
+let cart = [];
+console.log("hew", window.localStorage.getItem("username"))
+
+
+// Adding to cart
+
+function addToCart(index){
+    cart.push(index);
+    let add_btn = document.querySelector(`.AtCbtn-${index}`);
+    add_btn.style.display = "none";
+    alert("Comic moved to cart, You're lucky we had one in stock.");
+    populateCart();
+}
+
+function viewCart(){
+    document.querySelector(".cart").classList.toggle("active");
+}
+
+
 // Fetching products from database and then displaying them
 
 function createLimitedCards() {
@@ -14,9 +33,13 @@ function createLimitedCards() {
               let index = 0;
               random_data.forEach((comic) => {
                 container.innerHTML += `<div class="card">
-               <h2> ${comic[1]}</h2>
-               <h4>R ${comic[3]}.00</h4>
-               <button onclick="addToCart(${comic[0]})" class="AtCbtn-${comic[0]}">Add to cart</button>
+                <div class="title">
+                    <h2> ${comic[1]}</h2>
+                </div>
+                <div class="rest">
+                    <h4>R ${comic[3]}.00</h4>
+                    <button onclick="addToCart(${comic[0]})" class="AtCbtn-${comic[0]}">Add to cart</button>
+                </div>
            </div>`;
                 console.log(index);
                 index++;
@@ -44,9 +67,13 @@ function createBestCards() {
               let index = 0;
               best_data.forEach((comic) => {
                 container.innerHTML += `<div class="card">
-               <h2> ${comic[1]}</h2>
-               <h4>R ${comic[3]}.00</h4>
-               <button onclick="addToCart(${comic[0]})" class="AtCbtn-${comic[0]}">Add to cart</button>
+                <div class="title">
+                    <h2> ${comic[1]}</h2>
+                </div>
+                <div class="rest">
+                    <h4>R ${comic[3]}.00</h4>
+                    <button onclick="addToCart(${comic[0]})" class="AtCbtn-${comic[0]}">Add to cart</button>
+                </div>
            </div>`;
                 console.log(index);
                 index++;

@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/navbar.css">
     <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/cart.css">
     <title>Koumori's Comics Home Page</title>
     <script
       src="https://kit.fontawesome.com/cce18f0ce0.js"
@@ -36,14 +38,20 @@
             <a href="./login.html"><button><img src="https://img.icons8.com/color/30/000000/batman.png"/></button></a>
         </div>
     </div>
-    <div>
-        <div class="heading"><h1>Limited Offers</h1></div>
-        <div class="limited"></div>
+    <div class="content">
+        <div class="limited-con">
+            <div class="heading"><h1>Limited Offers</h1></div>
+            <div class="limited"></div>
+        </div>
+        <div class="best-con">
+            <div class="heading"><h1>Best Sellers</h1></div>
+            <div class="best"></div>
+        </div>
+        <div class="cart-container">
+            <div class="cart"></div>
+        </div>
     </div>
-    <div>
-        <div class="heading"><h1>Best Sellers</h1></div>
-        <div class="best"></div>
-    </div>
+    <script src="./javascript/cart.js"></script>
     <script src="./javascript/navbar.js"></script>
     <script src="./javascript/home.js"></script>
 </body>

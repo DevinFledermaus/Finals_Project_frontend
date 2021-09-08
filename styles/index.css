@@ -11,9 +11,9 @@
 .limited {
     display: flex;
     flex-direction: row;
-    border: 1px solid black;
     justify-content: space-around;
     width: 100vw;
+    margin-top: 20px;
 }
 
 .best-con {
@@ -23,9 +23,9 @@
 .best {
     display: flex;
     flex-direction: row;
-    border: 1px solid black;
     justify-content: space-around;
     width: 100vw;
+    margin-top: 20px;
 }
 
 .heading {
@@ -34,7 +34,7 @@
 }
 
 .card {
-    border: 1px solid white;
+    border: 1px solid black;
     width: 200px;
     height: 250px;
     display: flex;

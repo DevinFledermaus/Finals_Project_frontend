@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/header.css">
     <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/login.css">
     <title>Login & Register Page</title>
     <script
       src="https://kit.fontawesome.com/cce18f0ce0.js"
@@ -36,29 +37,36 @@
             <!-- <a href="./login.html"><button><img src="https://img.icons8.com/color/30/000000/batman.png"/></button></a> -->
         </div>
     </div>
-    <form class="form" id="loginform" action="POST">
-        <input
-        type="text"
-        id="username"
-        name="Username"
-        placeholder="Username"
-        class="inputs"
-        required
-      />
-
-      <input
-        type="password"
-        id="password"
-        name="Password"
-        placeholder="Password"
-        class="inputs"
-        required
-      />
-      <button type="submit" class="buttons">Login</button>
-      <div class="account">
-        <a href="./register.html">New User?</a>
-      </div>
-    </form>
+    <div class="content">
+        <div class="heading">
+            <h1>Login</h1>
+        </div>
+        <div class="form-container">
+            <form class="form" id="loginform" action="POST">
+                <input
+                type="text"
+                id="username"
+                name="Username"
+                placeholder="Username"
+                class="inputs"
+                required
+              />
+        
+              <input
+                type="password"
+                id="password"
+                name="Password"
+                placeholder="Password"
+                class="inputs"
+                required
+              />
+              <button type="submit" class="btn">Login</button>
+              <div class="account">
+                <a href="./register.html">New User?</a>
+              </div>
+            </form>
+        </div>
+    </div>
     <script src="./javascript/login.js"></script>
     <script src="./javascript/navbar.js"></script>
 </body>

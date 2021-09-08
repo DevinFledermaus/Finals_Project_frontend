@@ -73,6 +73,7 @@ function createCards() {
 
 createCards();
 
+// modal
 
 function viewComic(index) {
     console.log(index)

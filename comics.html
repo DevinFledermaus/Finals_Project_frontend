@@ -34,7 +34,7 @@
             </button>
         </nav>
         <div class="buttons">
-            <button class="cart-button" onclick="viewCart()"><img src="https://img.icons8.com/ios-glyphs/30/000000/fast-cart.png"/></button>
+            <button class="cart-button" onclick="toggleCart()"><img src="https://img.icons8.com/ios-glyphs/30/000000/fast-cart.png"/></button>
             <a href="./login.html"><button><img src="https://img.icons8.com/color/30/000000/batman.png"/></button></a>
             <button onclick="Logout()"><img src="https://img.icons8.com/ios-filled/30/000000/logout-rounded.png"/></button>
         </div>
@@ -75,9 +75,9 @@
             <div id="modal" class="comic-details"></div>
           </div>
           <div class="cart-container">
+              <button class="cart-button" onclick="toggleCart()">X</button>
               <div class="cart"></div>
           </div>
-          <button>View</button>
     </div>
       <script src="./javascript/modal.js"></script>
       <script src="./javascript/navbar.js"></script>

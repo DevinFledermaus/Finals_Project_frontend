@@ -1,5 +1,6 @@
 function populateCart() {
-    fetch("https://safe-stream-00881.herokuapp.com/view-all/").then(
+    fetch("https://safe-stream-00881.herokuapp.com/view-all/")
+    .then(
       (request) => {
         request.json().then((obj) => {
           //   console.log(obj);
@@ -16,7 +17,6 @@ function populateCart() {
                 total_cost += parseFloat(comic[3].replace("R", ""));
                 cart_container.innerHTML += `<div class="cart-item">
               <p class="id">Title: ${comic[1]}</p>
-              <p class="name">Description: ${comic[2]}</p>
               <p class="price">Price: R${comic[3]}.00</p>
               <p class="quantity">Quantity: 1</p>
               <button>Remove</button>
@@ -37,3 +37,8 @@ function populateCart() {
     <p class="total-p">Total : R${cost}.00</p>
     </div>`;
   }
+
+function toggleCart() {
+  console.log(document.querySelector(".cart-container"))
+  document.querySelector(".cart-container").classList.toggle("show");
+}

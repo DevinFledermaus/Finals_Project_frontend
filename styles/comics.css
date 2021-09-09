@@ -51,10 +51,28 @@
     padding: 10px;
     font-size: 70%;
     font-style: italic;
+    height: 100px;
 }
 
 .content {
     margin-top: 120px;
+}
+
+.rest .buttons {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+
+.rest button {
+    margin: 5px;
+}
+
+.rest h4 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-top: -20px;
 }
 
 /* Filters Styling */
@@ -85,6 +103,8 @@
 .hidden-3.show {
     opacity: 1;
 }
+
+/* modal */
 
 #modal{
     display: none;

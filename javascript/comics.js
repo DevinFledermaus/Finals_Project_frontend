@@ -54,13 +54,13 @@ function createCards() {
                     <h2> ${comic[1]}</h2>
                 </div>
                 <div class="rest">
-                    <h4>R ${comic[3]}.00</h4>
-                    <div class="buttons">
+                    <div class="comic-buttons">
                         <button onclick="viewComic(${comic[0]})" class="viewbtn-${comic[0]}">View</button>
                         <button onclick="addToCart(${comic[0]})" class="AtCbtn-${comic[0]}">Add to cart</button>
                         <button onclick="editComic(${comic[0]})" class="editbtn btn-${comic[0]}">Edit Comic Details</button>
                         <button onclick="dltComic(${comic[0]})" class="dltbtn btn-${comic[0]}">Delete Comic</button>
                     </div>
+                    <h4>R ${comic[3]}.00</h4>
                 </div>
            </div>`;
                 console.log(index);

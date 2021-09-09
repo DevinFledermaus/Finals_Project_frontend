@@ -1,20 +1,16 @@
 let signIn = document.querySelector("#loginform");
 
 function login(username, password) {
-    console.log(username);
-    console.log(password);
     fetch("https://safe-stream-00881.herokuapp.com/auth", {
       method: "POST",
       body: JSON.stringify({
         username: `${username}`,
         password: `${password}`,
       }),
-      headers: {
-        "Content-Type": "application/json",
-      },
     })
       .then((response) => response.json())
       .then((data) => {
+        console.log(data);
         if (data["access_token"]) {
           console.log(data);
           myStorage = window.localStorage;

@@ -21,10 +21,11 @@ function viewCart(){
 
 function createLimitedCards() {
     let container = document.querySelector(".limited");
-
-    fetch("https://safe-stream-00881.herokuapp.com/view-all/").then(
-        (request) => {
-            request.json().then((obj) => {
+    console.log("Hello");
+    fetch("https://safe-stream-00881.herokuapp.com/view-all/")
+    .then(res => res.json())
+    .then((obj) => {
+            console.log("Hello there")
               console.log(obj);
               data = obj.data;
               console.log(data);
@@ -46,8 +47,7 @@ function createLimitedCards() {
                 });
             });
         }
-    );
-}
+  
 
 createLimitedCards();
 

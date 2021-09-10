@@ -49,6 +49,57 @@
             <h4>Trading Hours: 09h00 - 18h00</h4>
             <h4>Location: WatchTower <span>(Not really)</span></h4>
         </div>
+        <form
+          action="https://formspree.io/f/myyleyql"
+          method="POST"
+          class="contact-form"
+        >
+          <div class="inputs">
+            <!--FullName-->
+            <div class="name-input">
+              <label for="name" class="contact-info">FullName</label>
+              <input
+                type="text"
+                class="contact-input"
+                name="name"
+                id="name"
+                placeholder="FullName"
+                required
+              />
+            </div>
+            <!--Email-->
+            <div class="email-input">
+              <label for="email" class="contact-info">Email</label>
+              <input
+                type="email"
+                class="contact-input"
+                name="email"
+                id="email"
+                placeholder="Name@domain.com"
+                required
+              />
+            </div>
+          </div>
+          <!--Message-->
+          <div class="contact-message">
+            <label for="message" class="contact-info">Your message</label>
+            <textarea
+              name="message"
+              id="message"
+              class="contact-input"
+              placeholder="Your Message"
+            ></textarea>
+          </div>
+          <!--Button-->
+          <div class="form-buttons">
+            <div class="btn1">
+              <button type="reset">Reset</button>
+            </div>
+            <div class="btn2">
+              <button type="submit">Send</button>
+            </div>
+          </div>
+        </form>
     </div>
     <script src="./javascript/navbar.js"></script>
 </body>

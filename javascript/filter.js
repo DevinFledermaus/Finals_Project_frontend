@@ -22,8 +22,6 @@ function dcCards() {
                     <div class="comic-buttons">
                         <button onclick="viewComic(${comic[0]})" class="viewbtn-${comic[0]}">View</button>
                         <button onclick="addToCart(${comic[0]})" class="AtCbtn-${comic[0]}">Add to cart</button>
-                        <button onclick="editComic(${comic[0]})" class="editbtn btn-${comic[0]}">Edit Comic Details</button>
-                        <button onclick="dltComic(${comic[0]})" class="dltbtn btn-${comic[0]}">Delete Comic</button>
                     </div>
                     <h4>R ${comic[3]}.00</h4>
                 </div>
@@ -63,8 +61,6 @@ function marvelCards() {
                     <div class="comic-buttons">
                         <button onclick="viewComic(${comic[0]})" class="viewbtn-${comic[0]}">View</button>
                         <button onclick="addToCart(${comic[0]})" class="AtCbtn-${comic[0]}">Add to cart</button>
-                        <button onclick="editComic(${comic[0]})" class="editbtn btn-${comic[0]}">Edit Comic Details</button>
-                        <button onclick="dltComic(${comic[0]})" class="dltbtn btn-${comic[0]}">Delete Comic</button>
                     </div>
                     <h4>R ${comic[3]}.00</h4>
                 </div>
@@ -101,11 +97,9 @@ function vertigoCards() {
                     <h2> ${comic[1]}</h2>
                 </div>
                 <div class="rest">
-                    <div class="comic-buttons">
+                   <div class="comic-buttons">
                         <button onclick="viewComic(${comic[0]})" class="viewbtn-${comic[0]}">View</button>
                         <button onclick="addToCart(${comic[0]})" class="AtCbtn-${comic[0]}">Add to cart</button>
-                        <button onclick="editComic(${comic[0]})" class="editbtn btn-${comic[0]}">Edit Comic Details</button>
-                        <button onclick="dltComic(${comic[0]})" class="dltbtn btn-${comic[0]}">Delete Comic</button>
                     </div>
                     <h4>R ${comic[3]}.00</h4>
                 </div>
@@ -145,8 +139,6 @@ function modCards() {
                     <div class="comic-buttons">
                         <button onclick="viewComic(${comic[0]})" class="viewbtn-${comic[0]}">View</button>
                         <button onclick="addToCart(${comic[0]})" class="AtCbtn-${comic[0]}">Add to cart</button>
-                        <button onclick="editComic(${comic[0]})" class="editbtn btn-${comic[0]}">Edit Comic Details</button>
-                        <button onclick="dltComic(${comic[0]})" class="dltbtn btn-${comic[0]}">Delete Comic</button>
                     </div>
                     <h4>R ${comic[3]}.00</h4>
                 </div>
@@ -186,8 +178,6 @@ function brnCards() {
                     <div class="comic-buttons">
                         <button onclick="viewComic(${comic[0]})" class="viewbtn-${comic[0]}">View</button>
                         <button onclick="addToCart(${comic[0]})" class="AtCbtn-${comic[0]}">Add to cart</button>
-                        <button onclick="editComic(${comic[0]})" class="editbtn btn-${comic[0]}">Edit Comic Details</button>
-                        <button onclick="dltComic(${comic[0]})" class="dltbtn btn-${comic[0]}">Delete Comic</button>
                     </div>
                     <h4>R ${comic[3]}.00</h4>
                 </div>
@@ -227,8 +217,6 @@ function ascCards() {
                     <div class="comic-buttons">
                         <button onclick="viewComic(${comic[0]})" class="viewbtn-${comic[0]}">View</button>
                         <button onclick="addToCart(${comic[0]})" class="AtCbtn-${comic[0]}">Add to cart</button>
-                        <button onclick="editComic(${comic[0]})" class="editbtn btn-${comic[0]}">Edit Comic Details</button>
-                        <button onclick="dltComic(${comic[0]})" class="dltbtn btn-${comic[0]}">Delete Comic</button>
                     </div>
                     <h4>R ${comic[3]}.00</h4>
                 </div>
@@ -268,8 +256,6 @@ function desCards() {
                     <div class="comic-buttons">
                         <button onclick="viewComic(${comic[0]})" class="viewbtn-${comic[0]}">View</button>
                         <button onclick="addToCart(${comic[0]})" class="AtCbtn-${comic[0]}">Add to cart</button>
-                        <button onclick="editComic(${comic[0]})" class="editbtn btn-${comic[0]}">Edit Comic Details</button>
-                        <button onclick="dltComic(${comic[0]})" class="dltbtn btn-${comic[0]}">Delete Comic</button>
                     </div>
                     <h4>R ${comic[3]}.00</h4>
                 </div>
@@ -304,8 +290,6 @@ function resetCards() {
                     <div class="comic-buttons">
                         <button onclick="viewComic(${comic[0]})" class="viewbtn-${comic[0]}">View</button>
                         <button onclick="addToCart(${comic[0]})" class="AtCbtn-${comic[0]}">Add to cart</button>
-                        <button onclick="editComic(${comic[0]})" class="editbtn btn-${comic[0]}">Edit Comic Details</button>
-                        <button onclick="dltComic(${comic[0]})" class="dltbtn btn-${comic[0]}">Delete Comic</button>
                     </div>
                     <h4>R ${comic[3]}.00</h4>
                 </div>

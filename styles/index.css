@@ -4,8 +4,24 @@
     box-sizing: border-box;
 }
 
+body{
+    background-image: url(../images/bg1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 .content {
     margin-top: 120px;
+}
+
+.limited-con {
+    margin: 50px;
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .limited {
@@ -17,7 +33,11 @@
 }
 
 .best-con {
-    margin-top: 50px;
+    margin: 50px;
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .best {
@@ -28,9 +48,9 @@
     margin-top: 20px;
 }
 
-.heading {
-    display: flex;
-    justify-content: center;
+.best .card {
+    width: 150px;
+    height: 200px;
 }
 
 .card {

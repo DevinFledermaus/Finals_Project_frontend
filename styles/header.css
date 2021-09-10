@@ -23,13 +23,18 @@ body {
     width: 100vw;
     height: 15vh;
     text-align: center;
-    justify-content: center;
     top: 0;
+    z-index: 1000;
 }
 
 .header > h1 {
     display: flex;
     justify-content: center;
+    margin-top: 20px;
+    font-size: 250%;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 3px;
 }
 
 
@@ -38,6 +43,7 @@ body {
     justify-content: flex-end;
     margin-right: 30px;
     gap: 2%;
+    margin-top: -35px;
 }
 
 .buttons > button {

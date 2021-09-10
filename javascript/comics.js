@@ -57,8 +57,6 @@ function createCards() {
                     <div class="comic-buttons">
                         <button onclick="viewComic(${comic[0]})" class="viewbtn-${comic[0]}">View</button>
                         <button onclick="addToCart(${comic[0]})" class="AtCbtn-${comic[0]}">Add to cart</button>
-                        <button onclick="editComic(${comic[0]})" class="editbtn btn-${comic[0]}">Edit Comic Details</button>
-                        <button onclick="dltComic(${comic[0]})" class="dltbtn btn-${comic[0]}">Delete Comic</button>
                     </div>
                     <h4>R ${comic[3]}.00</h4>
                 </div>
@@ -77,7 +75,7 @@ createCards();
 
 function viewComic(index) {
     console.log(index)
-    let comic_div = document.querySelector(".comic-details");
+    let comic_div = document.querySelector(".mod-content");
     comic_div.classList.toggle("show")
     comic_div.innerHTML = ``;
     actModal()
@@ -90,15 +88,14 @@ function viewComic(index) {
             data.forEach((comic) => {
                 if(comic[0] == index) {
                     comic_div.innerHTML += `
+                    <button onclick="viewComic(-1)">X</button>
                     <h1 class="title">${comic[1]}</h1>
                     <h2 class="universe">${comic[4]}</h2>
                     <h4 class="era">${comic[5]}</h4>
                     <p class="description">${comic[2]}</p>
                     <h4 class="price">R${comic[3]}</h4>`;
-                    console.log("wahhh", comic)
                 }
             });
-            comic_div.innerHTML += `<button onclick="viewComic(-1)">X</button>`
         });
     }
 }

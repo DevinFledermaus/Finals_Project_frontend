@@ -4,20 +4,33 @@
     box-sizing: border-box;
 }
 
+body{
+    background-image: url(../images/bg1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 .cards-container {
-    background: brown;
     display: flex;
     padding: 5%;
+}
+
+.content#blur.active {
+    filter: blur(20px);
+    pointer-events: none;
+    user-select: none;
 }
 
 .cards {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    background-color: white;
     justify-content: space-around;
     gap: 20px;
-    border: 1px solid black;
-    padding: 10px;
+    padding: 30px;
 }
 
 .card {
@@ -66,13 +79,69 @@
 
 .rest button {
     margin: 5px;
+    padding: 5px;
 }
 
 .rest h4 {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    margin-top: -20px;
+    margin-top: 20px;
+}
+
+.heading {
+    background-color: black;
+    padding: 10px;
+}
+
+.heading h1 {
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.filters {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#filter-groups {
+    background-color: black;
+    color: blue;
+    padding: 5px;
+    border: 1px solid white;
+    transition: 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+#filter-groups:hover {
+    background-color: blue;
+    color: black;
+    transition: 0.3s ease-in-out;
+    letter-spacing: 1px;
+}
+
+.filtered {
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.filtered button {
+    background-color: blue;
+    color: black;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid white;
+    transition: 0.3s ease-in-out;
+}
+
+.filtered button:hover {
+    background-color: black;
+    color: blue;
+    transition: 0.3s ease-in-out;
 }
 
 /* Filters Styling */
@@ -125,8 +194,56 @@
     opacity: 1;
     transform: translate(-50%, -50%);
     position: absolute;
-    background: yellow;
+    background: url(../images/bg1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     z-index: 100;
 }
 
+.mod-content {
+    background: white;
+    border: 1px solid black;
+    padding: 20px;
+}
 
+.mod-content button {
+    
+}
+
+.mod-content .title {
+    color: blue;
+    display: flex;
+    justify-content: center;
+    font-size: 200%;
+}
+
+.mod-content .universe {
+    color: black;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 100%;
+}
+
+.mod-content .era {
+    color: black;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 70%;
+}
+
+.mod-content .description {
+    color: black;
+    font-size: 70%;
+    margin: 10px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.mod-content .price {
+    color: black;
+    display: flex;
+    justify-content: flex-end;
+    font-weight: lighter;
+
+}

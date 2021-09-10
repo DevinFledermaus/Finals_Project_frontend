@@ -3,9 +3,12 @@ let signIn = document.querySelector("#loginform");
 function login(username, password) {
     fetch("https://safe-stream-00881.herokuapp.com/auth", {
       method: "POST",
+      headers: {
+        'Content-Type': 'application/json'
+      },
       body: JSON.stringify({
-        username: `${username}`,
-        password: `${password}`,
+        username: username,
+        password: password,
       }),
     })
       .then((response) => response.json())

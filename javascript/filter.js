@@ -1,16 +1,15 @@
+// Functions to filter out my comics according to the value of certain columns
+
 function dcCards() {
     let container = document.querySelector(".cards");
 
     fetch("https://safe-stream-00881.herokuapp.com/view-all/").then(
         (request) => {
             request.json().then((obj) => {
-            //   console.log(obj);
               data = obj.data;
-            //   console.log(data);
               let filtered = data.filter(e => {
                   return e[4] == "DC Comics";
               })
-              console.log(filtered);
               container.innerHTML = ``;
               let index = 0;
               filtered.forEach((comic) => {
@@ -26,7 +25,6 @@ function dcCards() {
                     <h4>R ${comic[3]}.00</h4>
                 </div>
            </div>`;
-                // console.log(index);
                 index++;
                 });
             });
@@ -43,13 +41,10 @@ function marvelCards() {
     fetch("https://safe-stream-00881.herokuapp.com/view-all/").then(
         (request) => {
             request.json().then((obj) => {
-            //   console.log(obj);
               data = obj.data;
-            //   console.log(data);
               let filtered = data.filter(e => {
                 return e[4] == "Marvel Comics";
               })
-              console.log(filtered);
               container.innerHTML = ``;
               let index = 0;
               filtered.forEach((comic) => {
@@ -65,7 +60,6 @@ function marvelCards() {
                     <h4>R ${comic[3]}.00</h4>
                 </div>
            </div>`;
-                // console.log(index);
                 index++;
                 });
             });
@@ -82,13 +76,10 @@ function vertigoCards() {
     fetch("https://safe-stream-00881.herokuapp.com/view-all/").then(
         (request) => {
             request.json().then((obj) => {
-            //   console.log(obj);
               data = obj.data;
-            //   console.log(data);
               let filtered = data.filter(e => {
                 return e[4] == "Vertigo Comics";
               })
-              console.log(filtered);
               container.innerHTML = ``;
               let index = 0;
               filtered.forEach((comic) => {
@@ -104,7 +95,6 @@ function vertigoCards() {
                     <h4>R ${comic[3]}.00</h4>
                 </div>
            </div>`;
-                // console.log(index);
                 index++;
                 });
             });

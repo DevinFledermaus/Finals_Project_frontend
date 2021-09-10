@@ -16,25 +16,6 @@ function viewCart(){
     document.querySelector(".cart").classList.toggle("active");
 }
 
-
-function editComic(){   
-    console.log("he", window.localStorage.getItem("username"))
-    if (window.localStorage.getItem("username") === null){
-        let edit_btn = document.querySelectorall(`.btn`)
-        edit_btn.forEach((btn) => {
-            btn.style.display = "none";
-        })
-        // edit_btn.style.display = "none";
-    };
-    
-
-}
-editComic();
-
-function dltComic(){
-
-}
-
 // Fetching products from database and then displaying them
 
 function createCards() {

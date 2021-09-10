@@ -1,22 +1,3 @@
-// let cart = [];
-// console.log("hew", window.localStorage.getItem("username"))
-
-
-// // Adding to cart
-
-// function addToCart(index){
-//     cart.push(index);
-//     let add_btn = document.querySelector(`.AtCbtn-${index}`);
-//     add_btn.style.display = "none";
-//     alert("Comic moved to cart, You're lucky we had one in stock.");
-//     populateCart();
-// }
-
-// function viewCart(){
-//     document.querySelector(".cart").classList.toggle("active");
-// }
-
-
 // Fetching products from database and then displaying them
 
 function createLimitedCards() {

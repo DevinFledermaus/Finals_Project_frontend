@@ -24,10 +24,8 @@ if (reg_form != null) {
       })
         .then((response) => response.json())
         .then((data) => {
-          console.log("potato", data.status_code);
           if(data.status_code === 201) {
             window.localStorage.setItem("user", JSON.stringify(new_user));
-            console.log(window.localStorage.user);
             alert("successful registration")
             window.location.href = "login.html";
           } else {

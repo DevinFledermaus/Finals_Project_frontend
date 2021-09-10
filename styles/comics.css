@@ -17,12 +17,6 @@ body{
     padding: 5%;
 }
 
-.content#blur.active {
-    filter: blur(20px);
-    pointer-events: none;
-    user-select: none;
-}
-
 .cards {
     display: flex;
     flex-direction: row;
@@ -208,7 +202,23 @@ body{
 }
 
 .mod-content button {
-    
+    color: blue;
+    font-size: 100%;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 50px;
+    border: 2px solid blue ;
+    background: black;
+    margin: 5px;
+    width: 40px;
+    transition: 0.3s ease-in-out;
+}
+
+.mod-content button:hover {
+    color: black;
+    background: blue;
+    border: 2px solid black;
+    transition: 0.3s ease-in-out;
 }
 
 .mod-content .title {

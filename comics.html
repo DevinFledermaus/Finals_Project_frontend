@@ -39,7 +39,7 @@
             <button onclick="Logout()"><img src="https://img.icons8.com/ios-filled/30/000000/logout-rounded.png"/></button>
         </div>
     </div>
-    <div class="content" id="blur">
+    <div class="content">
         <div class="heading">
             <h1>All Comics</h1>
             <div class="filters">
@@ -72,14 +72,14 @@
         </div>
         <div class="cards-container">
             <div class="cards"></div>
+            <div id="modal" class="comic-details">
+                <div class="mod-content"></div>
+            </div>
           </div>
           <div class="cart-container">
               <button class="cart-button" onclick="toggleCart()">X</button>
               <div class="cart"></div>
           </div>
-    </div>
-    <div id="modal" class="comic-details">
-        <div class="mod-content"></div>
     </div>
       <script src="./javascript/modal.js"></script>
       <script src="./javascript/navbar.js"></script>
